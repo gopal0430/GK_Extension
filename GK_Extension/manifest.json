@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name":"GK",
+    "version":"1.0",
+    "description": "GK Extension Whatsup",
+    "icons": {
+        "128": "icon128.png",
+        "48": "icon48.png",
+        "16": "icon16.png"
+      },
+      "host_permissions": [ "*://web.whatsapp.com/*"],
+      "permissions": [ "activeTab", "storage", "unlimitedStorage", "identity", "identity.email" ],
+      "background": {
+        "service_worker": "popup.js",
+        "persistent": false
+    },
+    
+      "action": {
+        "default_icon": "icon16.png",
+        "default_popup": "popup.html"
+      }
+
+}
